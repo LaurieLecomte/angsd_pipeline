@@ -28,7 +28,7 @@ do
 	# Extract all lines except first one and append to ALL_CHR.beagle
   zless $BEAGLE_FILE  | grep -v ^marker >> 03_saf_maf_gl_all/all_maf"$MIN_MAF"pctind"$PERCENT_IND"_maxdepth"$MAX_DEPTH_FACTOR"_no_outliers_ALL_CHR.beagle
 done
-
+bgzip 03_saf_maf_gl_all/all_maf"$MIN_MAF"pctind"$PERCENT_IND"_maxdepth"$MAX_DEPTH_FACTOR"_no_outliers_ALL_CHR.beagle
 
 # MAFS
 # 1. Extract header for 1st chr : 
